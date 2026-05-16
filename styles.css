@@ -488,7 +488,7 @@ img {
 .about-visual {
     position: relative;
     height: 500px;
-    background: url('images/hero_visual_1778801359675.png') center/cover no-repeat;
+    background: url('images/foto_portada.png') center/cover no-repeat;
     border-radius: 24px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.8);
     overflow: hidden;
@@ -718,4 +718,37 @@ img {
 
 @media (max-width: 600px) {
     .services-grid { grid-template-columns: 1fr; }
+}
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  z-index: 1000;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+.whatsapp-float a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.whatsapp-float svg {
+  width: 100%;
+  height: 100%;
+  color: #25D366;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  transition: var(--transition-fast);
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
 }
